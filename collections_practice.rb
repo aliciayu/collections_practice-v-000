@@ -30,13 +30,13 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.select {|word| word.start_with?("a")}
+  array.select { |word| word.start_with?("a") }
 end
 
 def sum_array(array)
-  array.inject(0){|sum,x| sum + x }
+  array.inject(0) { |sum,x| sum + x }
 end
 
 def add_s(array)
-  array.each_with_index.collect{|element, index| index !=1 ? element << "s" : element}
+  array.each_with_index.collect { |element, index| index !=1 ? element << "s" : element }
 end
